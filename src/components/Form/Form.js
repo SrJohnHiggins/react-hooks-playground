@@ -1,18 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useTitleInput } from "./useTitleInput";
 
-const Counter = () => {
-  const initialValue = window.localStorage.getItem("name") || "";
-  const [name, setName] = useState(initialValue);
-
-  useEffect(() => {
-    window.localStorage.setItem("name", name);
-  }, [name]);
+const Form = () => {
+  const [name, setName] = useTitleInput("");
 
   return (
     <div>
       <h3>Form Component</h3>
       <form onSubmit={e => formSubmit(e, name, setName)}>
         <label htmlFor="name">Name</label>
+
         <input
           type="text"
           onChange={e => setName(e.target.value)}
@@ -34,4 +31,4 @@ const formSubmit = (e, value, setValue) => {
   }, 2000);
 };
 
-export default Counter;
+export default Form;
