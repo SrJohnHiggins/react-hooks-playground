@@ -102,7 +102,7 @@ input {
 button {
   display: inline-block;
   background: #ffc994;
-  color: #333;
+  color: rgb(79, 63, 95);
   border-radius: 1px;
   padding: 10px 40px;
   border: none;
@@ -117,4 +117,9 @@ button {
 
 button:hover {
   background: #eb9a58;
+}
+
+.useRefStyled {
+  color: lightyellow;
+  background: lightpink;
 }
