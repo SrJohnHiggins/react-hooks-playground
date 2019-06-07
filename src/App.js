@@ -2,6 +2,7 @@ import React, { useState, createContext } from "react";
 
 import Form from "./components/Form/Form.js";
 import Counter from "./components/Counter";
+import CounterWithReducer from "./components/CounterWithReducer";
 import Toggle from "./components/Toggle";
 import Ref from "./components/Ref";
 
@@ -19,8 +20,9 @@ const App = () => {
       <div className="main-wrapper">
         <h1>React Hooks</h1>
         <Form />
-        <Toggle />
+        <CounterWithReducer />
         <Counter />
+        <Toggle />
         <Ref />
       </div>
     </UserContext.Provider>

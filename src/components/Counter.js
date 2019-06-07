@@ -13,8 +13,8 @@ const Counter = () => {
     <div>
       <h3>Counter Component</h3>
       <p>Current count is: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(count - 1)}>Decrement</button>
+      <button onClick={() => setCount(count + 1)}>+</button>
+      <button onClick={() => setCount(count - 1)}>-</button>
       <button onClick={() => setCount(0)}>Reset</button>
     </div>
   );
