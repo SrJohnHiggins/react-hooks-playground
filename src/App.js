@@ -5,6 +5,7 @@ import Counter from "./components/Counter";
 import CounterWithReducer from "./components/CounterWithReducer";
 import Toggle from "./components/Toggle";
 import Ref from "./components/Ref";
+import Memo from "./components/Memo";
 
 export const UserContext = createContext();
 
@@ -19,6 +20,7 @@ const App = () => {
     <UserContext.Provider value={{ user, logUser }}>
       <div className="main-wrapper">
         <h1>React Hooks</h1>
+        <Memo />
         <Form />
         <CounterWithReducer />
         <Counter />

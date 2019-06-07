@@ -13,6 +13,11 @@ const reducer = (state, action) => {
         count: state.count - 1
       };
 
+    case "MULTIPLY":
+      return {
+        count: state.count * action.value
+      };
+
     case "RESET":
       return {
         count: 0
@@ -40,6 +45,9 @@ const CounterWithReducer = () => {
       <p>Current count is: {state.count} </p>
       <button onClick={() => dispatch({ type: "INCREMENT" })}>+</button>
       <button onClick={() => dispatch({ type: "DECREMENT" })}>-</button>
+      <button onClick={() => dispatch({ type: "MULTIPLY", value: 10 })}>
+        x10
+      </button>
       <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
     </div>
   );
