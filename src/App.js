@@ -6,6 +6,8 @@ import CounterWithReducer from "./components/CounterWithReducer";
 import Toggle from "./components/Toggle";
 import Ref from "./components/Ref";
 import Memo from "./components/Memo";
+import FetchApp from "./components/Fetch";
+import FilterApp from "./components/Filter";
 
 export const UserContext = createContext();
 
@@ -26,6 +28,8 @@ const App = () => {
         <Counter />
         <Toggle />
         <Ref />
+        <FetchApp title="Fetching Data with React Hooks" />
+        <FilterApp title="Filtering Data with React Hooks" />
       </div>
     </UserContext.Provider>
   );

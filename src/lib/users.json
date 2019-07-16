@@ -1,0 +1,29 @@
+{
+  "usersData": [
+    {
+      "name": "Julio",
+      "age": 31,
+      "location": "Poland"
+    },
+    {
+      "name": "James",
+      "age": 19,
+      "location": "Poland"
+    },
+    {
+      "name": "Juan",
+      "age": 39,
+      "location": "Spain"
+    },
+    {
+      "name": "John",
+      "age": 20,
+      "location": "England"
+    },
+    {
+      "name": "Williams",
+      "age": 25,
+      "location": "Poland"
+    }
+  ]
+}
