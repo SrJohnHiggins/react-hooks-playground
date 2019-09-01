@@ -45,7 +45,7 @@ const CounterWithReducer = () => {
       <p>Current count is: {state.count} </p>
       <button onClick={() => dispatch({ type: "INCREMENT" })}>+</button>
       <button onClick={() => dispatch({ type: "DECREMENT" })}>-</button>
-      <button onClick={() => dispatch({ type: "MULTIPLY", value: 10 })}>
+      <button onClick={() => dispatch({ type: "MULTIPLY", value: 100 })}>
         x10
       </button>
       <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
